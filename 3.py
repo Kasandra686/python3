@@ -1,7 +1,6 @@
 def my_func(nums):
-   sorted(nums)
-   print(nums)
-   return (int(nums[1])+int(nums[2]))
+   nums.remove(min(nums))
+   return (int(nums[0])+int(nums[1]))
 
 while True:
     nums = input("Введите три числа через пробел: ").split()
@@ -9,4 +8,4 @@ while True:
         break
     else: print("Ошибка ввода!")
 
-my_func(nums)
+print (my_func(nums))
