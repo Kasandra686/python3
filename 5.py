@@ -1,21 +1,16 @@
 def new_func(*args):
-    result =0
-    print(args)
-    for el in args:
+    result = 0
+    for el in args[0]:
         if el != "#":
-             print(type(el))
-             result = result + int(el)
+            result = result + int(el)
         else:
             print(result)
             return ("#")
     print(result)
 
 
-srting = ''
-print("Программа не работает(")
+string = ' '
 print('Для окончания работы программы введите значение "#"')
-while srting != "#":
+while string != "#":
     string = input("Введите данные через пробел: ")
-
-    for el in string.split()
-    new_func(el)
+    string = new_func(string.split())
