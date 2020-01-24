@@ -1,9 +1,10 @@
 def new_func(*args):
     result =0
+    print(args)
     for el in args:
         if el != "#":
              print(type(el))
-             result = result + el
+             result = result + int(el)
         else:
             print(result)
             return ("#")
@@ -11,8 +12,10 @@ def new_func(*args):
 
 
 srting = ''
-print("Программа не работает. я не успела придумать как преобразовать список в число")
+print("Программа не работает(")
 print('Для окончания работы программы введите значение "#"')
 while srting != "#":
     string = input("Введите данные через пробел: ")
-    new_func(string.split())
+
+    for el in string.split()
+    new_func(el)
