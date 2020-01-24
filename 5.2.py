@@ -2,11 +2,11 @@ def new_func(*args):
     result =0
     for el in args:
         if el != "#":
-             print(type(el))
-             result = result + el
+
+            result=
         else:
             print(result)
-            return ("#")
+            return "#"
     print(result)
 
 
@@ -15,10 +15,19 @@ list=[]
 print('Для окончания работы программы введите значение "#"')
 while srting != "#":
     string = input("Введите данные через пробел: ")
-    ind=1
-    while (ind>0)
-    ind=string.find(' ')
-    if string[:ind+1].isdigit()
-        list.append(int(string[:ind+1]))
+    arg=1
+    string2 = string
+    while (arg>0):
+        arg = string2.find(' ')
+        print(arg)
+        print(string2[:arg])
+        if string2[:arg].isdigit():
+            list.append(int(string2[:arg]))
+        elif(string2[: (arg)]=="#" ):
+            list.append("#")
+        string2=string2[(arg+1):]
+    print(list)
+    new_func(list)
 
-    new_func(string.split())
+
+
