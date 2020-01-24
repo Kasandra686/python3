@@ -6,19 +6,16 @@ def new_func(*args):
         else:
             print(result + args[1])
             return ("#")
-    return(result)
+    return (result)
 
 
 string = ' '
-string2=0
+string2 = 0
 print('Для окончания работы программы введите значение "#"')
 while string != "#":
     string = input("Введите данные через пробел: ")
-    if ( new_func(string.split() , string2))!="#":
-        string2=  string2+ new_func(string.split(), string2)
+    if (new_func(string.split(), string2)) != "#":
+        string2 = string2 + new_func(string.split(), string2)
         print(string2)
     else:
         break
-
-
-
